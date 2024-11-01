@@ -20,7 +20,14 @@
         margin-bottom: 35px;
       }
 
+      .is-subscribed {
+        background-color: #F0F0F0;
+        color: black;
+
+      }
+
       .cost-input {
+       font-size: 15px;
        border: 1px, inset, rgb(118, 118, 118), 5px;
        width: 183.2px;
        height: 17.6px;
@@ -82,8 +89,10 @@ calculateTotal();
 
         if (buttonElement.innerText === 'Subscribe') {
           buttonElement.innerText = 'Subscribed';
+          buttonElement.classList.add("is-subscribed");
         } else {
           buttonElement.innerText = 'Subscribe';
+          buttonElement.classList.remove('is-subscribed');
         }
       }
 
